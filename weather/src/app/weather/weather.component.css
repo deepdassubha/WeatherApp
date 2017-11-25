@@ -1,0 +1,75 @@
+.wrapper {
+  font-family: 'Roboto';
+  width: 30%;
+  height: 400px;
+  margin: 5em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: black;
+  text-align: center;
+  background-color: lightgray;
+}
+.wrapper img {
+  width: 60%;
+  margin: 0 20%;
+}
+.wrapper .city {
+  font-size: 2.2em;
+  font-weight: 100;
+}
+.wrapper .temperature {
+  font-size: 3.5em;
+  font-weight: 100;
+}
+.wrapper .description {
+  font-size: 1.2em;
+  font-weight: 100;
+}
+.wrapper .tempM {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+#myForm{
+  position: absolute;
+    height: 200px;
+    width: 500px;
+    margin-left: 480px;
+    margin-top: 120px;
+}
+.curCity {
+  width: 50%;
+  align-items: center;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+}
+.curCity .cityName {
+  flex: 1 0 auto;
+  height: 25px;
+  font-size: 1em;
+  font-weight: 100;
+  border: 0.5 solid black;
+  padding: 0.5em;
+  margin-top: -352px;
+  position: relative;
+  top:10px;
+    margin-left: 26px;
+    width: 280px;
+}
+.curCity .btn {
+  background-color: blue;
+  border: 0;
+  width: 25%;
+  height: 25px;
+  color: white;
+  cursor: pointer;
+  margin-top: -336px;
+    margin-left: 20px;
+    height: 36px;
+    width: 80px;
+    position: relative;
+}
+.curCity .btn:hover {
+  background-color: #1a1aff;
+}

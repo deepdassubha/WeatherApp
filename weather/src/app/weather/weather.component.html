@@ -1,0 +1,18 @@
+   <form id="myForm" class="curCity" (ngSubmit)=onSubmit(userform) #userform="ngForm">
+    <input type="text" class="cityName" name="city" ngModel #city="ngModel" placeholder="Name of a city">
+    <button class="btn" name="button">Search</button>
+  </form>
+  <div class="wrapper"> 
+   <div *ngIf="currentDetails">
+    <h2 class="city">City Name : {{currentDetails?.cityName}}</h2>
+    <h1 class="temperature">Temperature: {{currentDetails?.temp}}&deg;</h1>
+    <div class="pan">
+      <div class="into temp">
+        <h4 class="tempMax tempM">Temp min: {{currentDetails?.tempMin}}&deg;</h4>
+        <h4 class="tempMin tempM">Temp max: {{currentDetails.tempMax}}&deg;</h4>
+      </div>
+    </div>
+    <h4 class="description">Cloud type: {{currentDetails?.type}}</h4>
+  </div>
+</div>
+
